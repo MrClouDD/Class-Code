@@ -1,0 +1,3 @@
+Hello Ajitesh Sandhu!
+This is ITEC 2150-01 class on T,Tr 2:00-5:30pm.
+It works!
