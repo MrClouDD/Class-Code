@@ -1,9 +1,11 @@
+CA/filewriting/printwriter/TestMain.class
 CA/interfaces/TestInterface.class
 CA/abstraction/Bicycle.class
 CA/interfaces/RideAble.class
 asquizfive/PersonList.class
 CA/gradebook/Faculty.class
 Week2/Average.class
+CA/grocery/TestMain.class
 Week3/Grading.class
 asquizfive/Person.class
 asquiztwo/Burger.class
@@ -31,6 +33,7 @@ asquiztwo/QuizTwoMain.class
 asquizthree/QuizThreeMain.class
 Week2/Main.class
 Week3/Student.class
+CA/grocery/ProdCats.class
 Week2/Sum1.class
 astest1/astest11/Employee.class
 Week2/Interest.class
@@ -55,6 +58,7 @@ Week2/Grading.class
 astest1/astest11/HourlyEmployee.class
 Week2/Sum2.class
 CA/abstraction/Car.class
+CA/grocery/ProductCategory.class
 CA/gradebook/Person.class
 Week2/modularGrading.class
 Week1/Hi2.class
