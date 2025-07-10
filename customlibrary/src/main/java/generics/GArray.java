@@ -185,57 +185,92 @@ public class GArray<T> implements Iterable<T>{
             }
         };
     }
-    
-    // TODO: Add a sort method that accepts a Comparator for custom sorting.
-    // TODO: Add a sort method that accepts a String for predefined sorting methods.
-    // TODO: Implement a resize method to dynamically change the array size.
-    // TODO: Add a reverse method to reverse the array elements.
-    // TODO: Implement an equality check method to compare two GArray objects.
 
-    /*
-    Common Sorting Comparators for String Functions:
-
-    1. "ascending": Sorts elements in natural order (e.g., alphabetical for strings).
-    2. "descending": Sorts elements in reverse natural order.
-    3. "byLength": Sorts strings by their length in ascending order.
-    4. "byLengthDescending": Sorts strings by their length in descending order.
-    5. "caseInsensitive": Sorts strings alphabetically, ignoring case.
-    6. "reverseCaseInsensitive": Sorts strings in reverse alphabetical order, ignoring case.
-    7. "alphabeticalIgnoreSpecialChars": Sorts strings alphabetically while ignoring special characters.
-    8. "numericValue": Sorts strings based on their numeric value if they represent numbers.
-    9. "localeSensitive": Sorts strings based on locale-specific rules.
-    10. "customPattern": Sorts strings based on a custom regex pattern match.
-    11. "frequency": Sorts strings by their frequency of occurrence in the array.
-    12. "vowelCount": Sorts strings by the number of vowels they contain.
-    13. "startsWith": Sorts strings based on whether they start with a specific prefix.
-    14. "endsWith": Sorts strings based on whether they end with a specific suffix.
-    15. "containsSubstring": Sorts strings based on whether they contain a specific substring.
-    */
-
-    void sort(Comparator<T> comparator){
-        Arrays.sort(this.array, comparator);
-    }
-    
-    private final static String[] sortingStrings = {
-        "ascending", "descending", "byLength", "byLengthDescending", "caseInsensitive", "reverseCaseInsensitive",
-        "numericValue", "localeSensitive", "frequency", "vowelCount", "startsWith", "endsWith"
-    };
-
-    // Create and assign the predefined number sorting methods
-    // private static Map<String, Comparator<? super Number>> numberSortingMap = Map.of(
-    //         "ascending", Comparator.naturalOrder(),
-    //         "descending", Comparator.reverseOrder()
-    //     ); 
-
-    
-    void sort(String comparatorString){
-        Object firstElement = this.array[0];
-
-        if (firstElement instanceof Integer){
-            
+    // Reverses the array
+    public T[] reverse(){
+        // if array has no values then return the array
+        if (array.length == 0){
+            return Arrays.copyOf(this.array, this.array.length);
         }
+        
+        // Create a new array that is the same type and size as the original
+        T[] reverseArray = (T[]) Array.newInstance(array.getClass().getComponentType(), array.length);
+        
+        // Fill array in a reverse method
+        for (int i = 0; i < this.array.length; i++) {
+            reverseArray[i] = this.array[this.array.length - 1 - i];
+        }   
+        
+        // return reversed array
+        return reverseArray;
     }
 
-    void sortNumbers(String comparatorString){
+    // Returns a resized array
+    public T[] resize(int newSize){
+        // if array has no values, return a copy of the original array
+        if (array.length == 0) {
+            return (T[]) Array.newInstance(array.getClass().getComponentType(), newSize);
+        }
+
+        // Return an array that is the copy of the original with a new size
+        return (T[]) Arrays.copyOfRange(this.array, 0, newSize);
     }
+
+    // Overridden equals methods to check if the passed Obj is the same as the original GArray
+    @Override
+    public boolean equals(Object obj){
+        // If the two compared objects are the same then return true
+        if (this == obj){
+            return true;
+        }
+
+        // If obj is null or not an instance of GArray, return false
+        if (obj == null || !(obj instanceof GArray)){
+            return false;
+        }
+    
+        // Cast obj into GArray to compare the two
+        GArray<?> objGArray = (GArray<?>) obj;
+
+        // Check if the array lengths are different
+        if (this.array.length != objGArray.getSize()){
+            return false;
+        }
+
+        // If any element differs return false
+        for (int i = 0; i < this.getSize(); i++) {
+            if (!(objGArray.getArray()[i].equals(this.getArray()[i]))){
+                return false;
+            }
+        }
+
+        // Else return true
+        return true;
+    }
+
+    // toString that will print all of the elements in the array
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        
+        sb.append("Generic array of type ");
+        sb.append(this.array.getClass());
+        sb.append(": [");
+
+        for (int i = 0; i < this.array.length; i++){
+           sb.append(this.array[i]);
+            if (i < this.array.length - 1){
+                sb.append(", \n");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+   
+    // Simple hash coding that calls the default array hashing
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(this.array);
+    }
+
 }
