@@ -1,0 +1,6 @@
+1 Bakery
+2 Deli
+3 Grocery
+4 Meat
+5 Produce
+6 Seafood
