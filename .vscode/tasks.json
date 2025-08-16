@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile and Run Java",
+			"type": "shell",
+			"command": "cd '${fileDirname}' && javac '${fileBasename}' && java '${fileBasenameNoExtension}'",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$javac"
+			]
+		}
+	]
+}
