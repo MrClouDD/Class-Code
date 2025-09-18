@@ -8,21 +8,23 @@ package ITEC3150;
  */
 
 public class HW0904 {
-    static int getNumberOfLeaves(TreeNode root) {
-        int leafCount = 0;
-
-        TreeNode parent = root;
-        TreeNode current = parent;
-
-        if (current == null) {
-            return 0;
-        }
-
-        if (current.left == null && current.right == null) {
-            return 1;
-
-        }
-
-        return getNumberOfLeaves(current.left) + getNumberOfLeaves(current.right);
-    }
+    /*
+     * static int getNumberOfLeaves(TreeNode root) {
+     * int leafCount = 0;
+     * 
+     * TreeNode parent = root;
+     * TreeNode current = parent;
+     * 
+     * if (current == null) {
+     * return 0;
+     * }
+     * 
+     * if (current.left == null && current.right == null) {
+     * return 1;
+     * 
+     * }
+     * 
+     * return getNumberOfLeaves(current.left) + getNumberOfLeaves(current.right);
+     * }
+     */
 }
