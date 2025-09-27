@@ -32,6 +32,25 @@ public class AVLTree<E> extends BST<E> {
         return true; // e is inserted
     }
 
+    public void updateSize(Node<E> node) {
+        int leftSize, rightSize;
+        if (node == null) {
+            return;
+        }
+        if (node.getLeftChild() == null) {
+            leftSize = 0;
+        } else {
+            leftSize = node.getLeftChild().getSize();
+        }
+        if (node.getRightChild() == null) {
+            rightSize = 0;
+        } else {
+            rightSize = node.getRightChild().getSize();
+        }
+        int size = leftSize + rightSize + 1;
+        node.setSize(size);
+    }
+
     /** Update the height of a specified node */
     private void updateHeight(Node<E> node) {
         if (node.left == null && node.right == null) // node is a leaf
@@ -55,6 +74,7 @@ public class AVLTree<E> extends BST<E> {
         for (int i = path.size() - 1; i >= 0; i--) {
             Node<E> A = (Node<E>) (path.get(i));
             updateHeight(A);
+            updateSize(A);
             Node<E> parentOfA = (A == root) ? null : (Node<E>) (path.get(i - 1));
 
             switch (balanceFactor(A)) {
@@ -104,6 +124,10 @@ public class AVLTree<E> extends BST<E> {
         B.right = A; // Make A the left child of B
         updateHeight((Node<E>) A);
         updateHeight((Node<E>) B);
+
+        // Adjust size
+        updateSize((Node<E>) A);
+        updateSize((Node<E>) B);
     }
 
     /** Balance LR (see Figure 26.5) */
@@ -130,6 +154,11 @@ public class AVLTree<E> extends BST<E> {
         updateHeight((Node<E>) A);
         updateHeight((Node<E>) B);
         updateHeight((Node<E>) C);
+
+        // Adjust size
+        updateSize((Node<E>) A);
+        updateSize((Node<E>) B);
+        updateSize((Node<E>) C);
     }
 
     /** Balance RR (see Figure 26.4) */
@@ -150,6 +179,10 @@ public class AVLTree<E> extends BST<E> {
         B.left = A;
         updateHeight((Node<E>) A);
         updateHeight((Node<E>) B);
+
+        // Adjust size
+        updateSize((Node<E>) A);
+        updateSize((Node<E>) B);
     }
 
     /** Balance RL (see Figure 26.6) */
@@ -176,6 +209,11 @@ public class AVLTree<E> extends BST<E> {
         updateHeight((Node<E>) A);
         updateHeight((Node<E>) B);
         updateHeight((Node<E>) C);
+
+        // Adjust size
+        updateSize((Node<E>) A);
+        updateSize((Node<E>) B);
+        updateSize((Node<E>) C);
     }
 
     @Override /**
