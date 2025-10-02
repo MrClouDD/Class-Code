@@ -278,12 +278,54 @@ public class UnweightedGraph<V> implements Graph<V> {
     }
 
     @Override /** Remove vertex v and return true if successful */
-    public boolean remove(V v) {
-        return true; // Implementation left as an exercise
+public boolean remove(V v) {
+    int index = getIndex(v);
+    if (index == -1) return false;
+    
+    // Remove the vertex
+    vertices.remove(index);
+    
+    // Remove its adjacency list
+    neighbors.remove(index);
+    
+    // Remove all edges that point to this vertex
+    // and adjust indices for all edges
+    for (List<Edge> edgeList : neighbors) {
+        // Remove edges to deleted vertex and adjust indices in one pass
+        for (int i = edgeList.size() - 1; i >= 0; i--) {
+            Edge e = edgeList.get(i);
+            
+            if (e.v == index) {
+                // Remove edge pointing to deleted vertex
+                edgeList.remove(i);
+            } else {
+                // Adjust indices
+                int newU = (e.u > index) ? e.u - 1 : e.u;
+                int newV = (e.v > index) ? e.v - 1 : e.v;
+                
+                if (newU != e.u || newV != e.v) {
+                    edgeList.set(i, new Edge(newU, newV));
+                }
+            }
+        }
     }
+    
+    return true;
+}
 
-    @Override /** Remove edge (u, v) and return true if successful */
-    public boolean remove(int u, int v) {
-        return true; // Implementation left as an exercise
+@Override /** Remove edge (u, v) and return true if successful */
+public boolean remove(int u, int v) {
+    if (u < 0 || u >= getSize() || v < 0 || v >= getSize()) {
+        return false;
     }
+    
+    List<Edge> edgeList = neighbors.get(u);
+    for (int i = 0; i < edgeList.size(); i++) {
+        if (edgeList.get(i).v == v) {
+            edgeList.remove(i);
+            return true;
+        }
+    }
+    
+    return false;
 }
