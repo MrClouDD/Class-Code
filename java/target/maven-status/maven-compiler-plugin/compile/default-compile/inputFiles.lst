@@ -1,6 +1,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizfive/QuizMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizseven/WaitingQueue.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest11/TestMain11.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/NineTail.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/grocery/ProductCategory.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Hi2.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizone/UchihaClan.java
@@ -15,6 +16,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Num.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizsix/Coin.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/generics/GArray.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/NineTailModel.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/interfaces/Bicycle.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test23/PersonStack.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/Pizza.java
@@ -24,6 +26,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Sum1.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Variable.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/gradebook/Student.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/AVLTree.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/grocery/ProductCatagory.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/structures/MyQueue.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/interfaces/RideAble.java
@@ -38,10 +41,12 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/HelloWorld.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Sum2.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest12/PromotionItem.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/BST.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/QuizTwoMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test23/Person.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest11/Employee.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest12/MultiBuys.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/gettingKthElement.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test24/Person.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizone/QuizOneMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/abstraction/Bicycle.java
@@ -50,10 +55,13 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/generics/TestMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest12/BOGO.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest13/TestMain13.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/travelDimensions.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizsix/QuizMain.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/Test1Redo.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week3/Grading.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/abstraction/Car.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/towerOfHannoi.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/UnweightedGraph.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test21/BSearch.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/generics/TestGArray.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week3/Person.java
@@ -64,10 +72,11 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/sorting/MyQueue.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Loop.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizthree/QuizThreeMain.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/Edge.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/Burger.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/HW0814.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/sorting/HeapSort.java
-/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/Test1Redo/Test1Redo.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/Graph.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Average.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/interfaces/TestInterface.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizone/Ninja.java
@@ -90,6 +99,8 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test21/TestMain21.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test22/TestMain22.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/stack/stackMain.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/Node.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/Tree.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/gradebook/Grading.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/Compress.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/gradebook/Person.java
@@ -97,3 +108,4 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/sorting/InsertionSort.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/modularGrading.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Main.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/TestGraph.java
