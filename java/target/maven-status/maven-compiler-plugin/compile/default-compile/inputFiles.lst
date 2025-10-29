@@ -1,10 +1,10 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizfive/QuizMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizseven/WaitingQueue.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest11/TestMain11.java
-/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/NineTail.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/grocery/ProductCategory.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Hi2.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizone/UchihaClan.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/Thief.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/HuffmanCode.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest11/HourlyEmployee.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/grocery/TestMain.java
@@ -12,11 +12,11 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/FoodItem.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week3/Student.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Student.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/SixteenTail.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Hi.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Num.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizsix/Coin.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/generics/GArray.java
-/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/NineTailModel.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/interfaces/Bicycle.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test23/PersonStack.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/Pizza.java
@@ -37,6 +37,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/recursion/FactorialCalculator.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizseven/QuizMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Interest.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/dimensionalTravel.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/gradebook/Gradable.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/HelloWorld.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Sum2.java
@@ -58,10 +59,13 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/travelDimensions.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizsix/QuizMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/Test1Redo.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/NineTailModel.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/SixteenTailModel.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week3/Grading.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/abstraction/Car.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/towerOfHannoi.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/UnweightedGraph.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/MinimumOperationsGraph.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest2/test21/BSearch.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/generics/TestGArray.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week3/Person.java
@@ -72,6 +76,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/sorting/MyQueue.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week1/Loop.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizthree/QuizThreeMain.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/EdgeWithCost.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/customLibrary/ITEC3150/Edge.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquiztwo/Burger.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/HW0814.java
@@ -87,6 +92,7 @@
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/Week2/Grading.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/abstraction/TestMain.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/HW0904.java
+/home/mrcloudd/Documents/class-code/java/src/main/java/ITEC3150/MinimumOperations.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/astest1/astest11/Manager.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/asquizthree/AnyThree.java
 /home/mrcloudd/Documents/class-code/java/src/main/java/ITEC2150/CA/grocery/ProdCats.java

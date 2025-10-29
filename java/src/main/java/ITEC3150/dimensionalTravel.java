@@ -1,7 +1,10 @@
 package ITEC3150;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+import customLibrary.ITEC3150.EdgeWithCost;
 import customLibrary.ITEC3150.UnweightedGraph;
 
 public class dimensionalTravel {
@@ -21,7 +24,7 @@ public class dimensionalTravel {
     void graphCreation(int n, int m) {
         int NUMBER_OF_VERTICES = n * m;
 
-        List<EdgeWithCost>
+        List<EdgeWithCost> edges = new ArrayList<>();
 
         UnweightedGraph<Integer> graph = new UnweightedGraph<>();
     }
