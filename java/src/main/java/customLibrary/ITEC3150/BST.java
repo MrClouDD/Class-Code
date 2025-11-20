@@ -263,4 +263,83 @@ public class BST<E> implements Tree<E> {
         root = null;
         size = 0;
     }
+
+    @Override
+    public boolean addAll(java.util.Collection<? extends E> collection) {
+        boolean wasModified = false;
+        for (E element : collection) {
+            if (insert(element)) {
+                wasModified = true;
+            }
+        }
+        return wasModified;
+    }
+
+    @Override
+    public boolean containsAll(java.util.Collection<?> collection) {
+        for (Object element : collection) {
+            if (!search((E) element)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public boolean removeAll(java.util.Collection<?> collection) {
+        boolean wasModified = false;
+        for (Object element : collection) {
+            if (delete((E) element)) {
+                wasModified = true;
+            }
+        }
+        return wasModified;
+    }
+
+    @Override
+    public boolean retainAll(java.util.Collection<?> collection) {
+        java.util.List<E> elementsToRemove = new java.util.ArrayList<>();
+        for (E element : this) {
+            if (!collection.contains(element)) {
+                elementsToRemove.add(element);
+            }
+        }
+        boolean wasModified = false;
+        for (E element : elementsToRemove) {
+            if (delete(element)) {
+                wasModified = true;
+            }
+        }
+        return wasModified;
+    }
+
+    @Override
+    public Object[] toArray() {
+        Object[] result = new Object[size];
+        int idx = 0;
+        for (E element : this) {
+            result[idx] = element;
+            idx++;
+        }
+        return result;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    public <T> T[] toArray(T[] array) {
+        if (array.length < size) {
+            array = (T[]) java.lang.reflect.Array.newInstance(
+                    array.getClass().getComponentType(), size);
+        }
+        int idx = 0;
+        Object[] result = array;
+        for (E element : this) {
+            result[idx] = element;
+            idx++;
+        }
+        if (array.length > size) {
+            array[size] = null;
+        }
+        return array;
+    }
 }

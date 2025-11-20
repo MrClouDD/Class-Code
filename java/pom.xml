@@ -16,6 +16,18 @@
     </properties>
 
     <dependencies>
+        <!-- JavaFX Dependencies -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+        
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -39,6 +51,48 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <!-- Default execution -->
+                    <execution>
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>ITEC3150.CA1111.ca1111</mainClass>
+                        </configuration>
+                    </execution>
+                    <!-- TicTacToe Server execution -->
+                    <execution>
+                        <id>tictactoe-server</id>
+                        <configuration>
+                            <mainClass>ITEC3150.ConnectFourEC.TicTacToeServer</mainClass>
+                        </configuration>
+                    </execution>
+                    <!-- TicTacToe Client execution -->
+                    <execution>
+                        <id>tictactoe-client</id>
+                        <configuration>
+                            <mainClass>ITEC3150.ConnectFourEC.TicTacToeClient</mainClass>
+                        </configuration>
+                    </execution>
+                    <!-- ConnectFour Server execution -->
+                    <execution>
+                        <id>connectfour-server</id>
+                        <configuration>
+                            <mainClass>ITEC3150.ConnectFourEC.ConnectFourServer</mainClass>
+                        </configuration>
+                    </execution>
+                    <!-- ConnectFour Client execution -->
+                    <execution>
+                        <id>connectfour-client</id>
+                        <configuration>
+                            <mainClass>ITEC3150.ConnectFourEC.ConnectFourClient</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
