@@ -56,7 +56,7 @@
         "source.organizeImports": "explicit",
         "source.fixAll": "explicit"
     },
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     "editor.hover.delay": 300,
     "editor.lightbulb.enabled": "on",
     "editor.wordBasedSuggestions": "off",
