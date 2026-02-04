@@ -8,6 +8,19 @@
     use zip somewhere
     specify type annotations in at least one place
     make sure it's sufficiently distinct from others' submissions and that your program has a theme
+
+    Game Ledger:
+        zip for menu
+        Data:
+            Unique set of games.
+            dict of total hours.
+            tuple list of sessions.
+        Add:
+            Name, Hours
+            Check name in set, if not add to set.
+        leadboards
+        quit
+        
 """
 
 
