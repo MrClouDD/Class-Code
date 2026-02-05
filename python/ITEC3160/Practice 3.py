@@ -22,34 +22,24 @@
         quit
         
 """
-
-
-
-def main():
-    print("main")
-
-def add_to_set():
-    """ Add to classes set. Check for membership before adding. Implements a stop by comparing with the 'falsy' of the string input
-    """
-    classes = {"ECON2100", "ITEC3160", "MATH2600", "MATH2500"}
-
-    hours_per_week = {5, 8, 10, 12}
-
-    cont = True
-
-    while cont:
-        class_to_add = input("Enter the class code to add (press enter without anything to exit):")
-
-        if (class_to_add is None):
-            cont = False
-
-        while class_to_add in classes:
-            print(f"{class_to_add} already exists. Enter a new class code:")
-        
-        hours_to_add = input(f"Enter the # of hours spent per week for {class_to_add}")
-        hours_per_week.add(hours_to_add)
-
-    
-
-
-        
+menu_command = ""
+while True:
+    if (menu_command == "add".lower):
+        # Adding session
+        print("TODO")
+    elif (menu_command.lower == "list"):
+        # show list of games
+        print("TODO")
+    elif (menu_command.lower == "leaderboard"):
+        # show leadboard (list sorted my descending total hours)
+        print("TODO")
+    elif (menu_command.lower == "quit"):
+        break
+    elif (menu_command.lower == "help"):
+        print("Commands")
+        print("'add' to add a game session")
+        print("'list' to list all sessions")
+        print("'leaderboard' to list games in order of most hours played")
+    else: 
+        print("Command not recognized")
+        continue
